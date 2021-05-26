@@ -7,7 +7,7 @@ function getWeather(){
     let container = document.getElementById("card_container");
 
     let appid = "09a0e4cda3a57a2711f58769cfd506a3";
-    fetch(`http://api.openweathermap.org/data/2.5/weather?id=${cityarrs[cityvalue]}&appid=${APIkey}`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?id=${cityarrs[cityvalue]}&appid=${APIkey}`)
     .then(function(resp){ return resp.json();})
     .then(function(data){ 
         console.log(data);
