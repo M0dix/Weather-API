@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>API</title>
+</head>
+<body>
+    <div class="header"><span class="header_text">Weather API</span></div>
+    <div class="form">
+        <div class="select city">
+            <select id=selector_city class=selector_city>
+                <option value="0">Москва</option>
+                <option value="1">Санкт-Петербург</option>
+                <option value="2">Саратов</option>
+                <option value="3">Петровск</option>
+                <option value="4">Калининград</option>
+                <option value="5">Пенза</option>
+            </select>
+        </div>
+
+        <button type="button" class="start_button" onclick="getWeather()">Старт</button>
+
+        <div id="card_container" class="card_container">
+
+        </div>
+    </div>
+
+</body>
+</html>
